@@ -1,0 +1,31 @@
+{
+    "dev": {
+        "app_function": "procesar.app",
+        "aws_region": "us-east-1",
+        "exclude": [
+            "boto3",
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ],
+        "profile_name": "default",
+        "project_name": "procesar",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-txka67rtz",
+        "keep_warm": false,
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "role_name": "LabRole",
+        "events": [
+        {
+            "function": "procesar.app",
+            "event_source": {
+              "arn":  "arn:aws:s3:::landing-casas-2024",
+              "events": [
+                "s3:ObjectCreated:*"
+              ]
+           }
+        }]
+    }
+}

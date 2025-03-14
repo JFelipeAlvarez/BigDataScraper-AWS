@@ -1,0 +1,13 @@
+
+.git/
+.c9/
+
+*/env/
+
+env/
+
+*/.pytest_cache/
+*/__pycache__/
+__pycache__/
+.pytest_cache/
+.qodo
