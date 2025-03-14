@@ -8,6 +8,7 @@ headers = {
 }
 
 
+
 def descargar_y_subir():
     for i in range(1, 11):
         HTML_URL = f"https://casas.mitula.com.co/find?page={i}&operationType=sell&propertyType=mitula_studio_apartment&geoId=mitula-CO-poblacion-0000014156"
